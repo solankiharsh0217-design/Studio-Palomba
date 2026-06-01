@@ -39,13 +39,13 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 h-28 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 h-20 transition-all duration-300 ${
         transparent
           ? 'bg-transparent'
           : 'bg-white/95 backdrop-blur-md shadow-lg'
       }`}
     >
-      <div className="container-x h-full flex items-center justify-between">
+      <div className="container-x h-full flex items-center justify-between gap-6">
         <Link href="/" className="flex-shrink-0" aria-label="Studio Palomba - Home">
           <Image
             src="/images/paer-logo.png"
@@ -53,37 +53,37 @@ export default function Header() {
             width={400}
             height={160}
             priority
-            className="h-24 w-auto"
+            className="h-14 w-auto"
           />
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-1">
-          {NAV_ITEMS.map((item) => {
-            const active = item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`relative px-3 py-2 text-sm font-medium transition-colors ${
-                  transparent
-                    ? `text-white/90 hover:text-white ${active ? 'text-white' : ''}`
-                    : `text-gray-700 hover:text-navy ${active ? 'text-navy' : ''}`
-                }`}
-              >
-                {item.label}
-                {active && (
-                  <motion.span
-                    layoutId="activeNav"
-                    className="absolute left-3 right-3 -bottom-0.5 h-0.5 bg-gold rounded-full"
-                    transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                  />
-                )}
-              </Link>
-            );
-          })}
-        </nav>
+        <div className="hidden lg:flex items-center gap-6">
+          <nav className="flex items-center gap-1">
+            {NAV_ITEMS.map((item) => {
+              const active = item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`relative px-3 py-2 text-sm font-medium transition-colors ${
+                    transparent
+                      ? `text-white/90 hover:text-white ${active ? 'text-white' : ''}`
+                      : `text-gray-700 hover:text-navy ${active ? 'text-navy' : ''}`
+                  }`}
+                >
+                  {item.label}
+                  {active && (
+                    <motion.span
+                      layoutId="activeNav"
+                      className="absolute left-3 right-3 -bottom-0.5 h-0.5 bg-gold rounded-full"
+                      transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </Link>
+              );
+            })}
+          </nav>
 
-        <div className="hidden lg:flex items-center">
           <a
             href="tel:+393483112241"
             className={`btn-primary ${transparent ? 'btn-gold' : 'btn-navy'} text-sm px-5 py-2.5`}
@@ -110,7 +110,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden absolute top-28 left-0 right-0 bg-white shadow-2xl border-t border-gray-100"
+            className="lg:hidden absolute top-20 left-0 right-0 bg-white shadow-2xl border-t border-gray-100"
           >
             <nav className="container-x py-4 flex flex-col">
               {NAV_ITEMS.map((item) => {
