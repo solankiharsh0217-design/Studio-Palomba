@@ -22,8 +22,8 @@ export default function ServiziPage() {
         bgImage="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&q=80"
       />
 
-      <section className="py-24 bg-white">
-        <div className="container-x space-y-20">
+      <section className="py-16 sm:py-20 md:py-24 bg-white">
+        <div className="container-x space-y-12 sm:space-y-16 md:space-y-20">
           {SERVICES.map((service, i) => {
             const Icon = iconMap[service.icon] || FileText;
             const isReversed = i % 2 === 1;

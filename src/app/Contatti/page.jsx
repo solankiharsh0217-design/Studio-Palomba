@@ -29,7 +29,7 @@ export default function ContattiPage() {
         bgImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
       />
 
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-20 md:py-24 bg-white">
         <div className="container-x">
           <div className="grid lg:grid-cols-2 gap-12">
             <FadeIn direction="left">

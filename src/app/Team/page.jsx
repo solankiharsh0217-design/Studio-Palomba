@@ -20,7 +20,7 @@ export default function TeamPage() {
         bgImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80"
       />
 
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 sm:py-20 md:py-24 bg-gray-50">
         <div className="container-x">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {TEAM.map((member, i) => (

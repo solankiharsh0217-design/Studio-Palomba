@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function NotFound() {
   return (
-    <section className="min-h-[60vh] flex items-center justify-center py-24">
+    <section className="min-h-[60vh] flex items-center justify-center py-16 sm:py-20 md:py-24">
       <div className="container-x text-center">
         <h1 className="text-7xl font-bold text-navy mb-4">404</h1>
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">

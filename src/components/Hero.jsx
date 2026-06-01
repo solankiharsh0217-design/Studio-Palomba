@@ -41,14 +41,14 @@ export default function Hero({
       <div className="absolute bottom-10 right-10 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none hidden md:block" />
 
       <div
-        className={`relative container-x pt-32 pb-24 md:pt-40 md:pb-32 ${
+        className={`relative container-x px-5 sm:px-6 lg:px-8 pt-28 pb-20 sm:pt-32 sm:pb-24 md:pt-40 md:pb-32 ${
           centered ? 'text-center flex flex-col items-center' : ''
         }`}
       >
         {eyebrow && centered && (
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full pl-2 pr-4 py-1.5 mb-8">
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full pl-2 pr-4 py-1.5 mb-6 sm:mb-8">
             <span className="w-2 h-2 rounded-full bg-gold shadow-[0_0_8px_rgba(201,162,39,0.7)]" />
-            <span className="text-sm font-medium text-white/90">{eyebrow}</span>
+            <span className="text-xs sm:text-sm font-medium text-white/90">{eyebrow}</span>
           </div>
         )}
 
@@ -57,7 +57,7 @@ export default function Hero({
         )}
 
         <h1
-          className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-8 ${
+          className={`text-[2.25rem] sm:text-5xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6 sm:mb-8 ${
             centered ? 'max-w-5xl' : 'max-w-3xl'
           }`}
         >
@@ -78,12 +78,12 @@ export default function Hero({
 
         {/* Thin gold accent line under the heading for visual anchor */}
         {centered && (
-          <div className="w-20 h-1 bg-gold rounded-full mb-8" />
+          <div className="w-16 sm:w-20 h-1 bg-gold rounded-full mb-6 sm:mb-8" />
         )}
 
         {subtitle && (
           <p
-            className={`text-lg md:text-xl text-white/80 leading-relaxed mb-10 ${
+            className={`text-base sm:text-lg md:text-xl text-white/80 leading-relaxed mb-8 sm:mb-10 px-2 sm:px-0 ${
               centered ? 'max-w-2xl' : 'max-w-2xl'
             }`}
           >
@@ -91,7 +91,7 @@ export default function Hero({
           </p>
         )}
 
-        <div className={centered ? 'w-full flex flex-col items-center' : ''}>
+        <div className={`w-full ${centered ? 'flex flex-col items-center' : ''}`}>
           {children}
         </div>
       </div>

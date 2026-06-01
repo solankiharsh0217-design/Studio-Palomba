@@ -23,9 +23,9 @@ export default function ChiSiamoPage() {
       />
 
       {/* Story */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-20 md:py-24 bg-white">
         <div className="container-x">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <FadeIn direction="left">
               <p className="eyebrow text-gold mb-3">La Nostra Storia</p>
               <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
@@ -59,7 +59,7 @@ export default function ChiSiamoPage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 sm:py-20 md:py-24 bg-gray-50">
         <div className="container-x">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="eyebrow text-gold mb-3">Il Nostro Percorso</p>
@@ -109,7 +109,7 @@ export default function ChiSiamoPage() {
       </section>
 
       {/* Method */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-20 md:py-24 bg-white">
         <div className="container-x">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="eyebrow text-gold mb-3">Il Metodo di Lavoro</p>
@@ -145,7 +145,7 @@ export default function ChiSiamoPage() {
       </section>
 
       {/* Values */}
-      <section className="py-24 bg-navy text-white">
+      <section className="py-16 sm:py-20 md:py-24 bg-navy text-white">
         <div className="container-x">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="eyebrow text-gold mb-3">I Nostri Valori</p>

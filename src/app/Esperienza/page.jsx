@@ -23,7 +23,7 @@ export default function EsperienzaPage() {
         bgImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80"
       />
 
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-20 md:py-24 bg-white">
         <div className="container-x">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {STATS.map((s, i) => (
@@ -39,14 +39,14 @@ export default function EsperienzaPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 sm:py-20 md:py-24 bg-gray-50">
         <div className="container-x">
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
             <p className="eyebrow text-gold mb-3">Settori di Competenza</p>
             <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
               Esperienza trasversale in molteplici settori
             </h2>
-            <p className="text-gray-500 text-lg">
+            <p className="text-gray-500 text-base sm:text-lg">
               La nostra esperienza spazia in numerosi settori economici, permettendoci di comprendere le specificità di ogni realtà aziendale
             </p>
           </div>
@@ -70,9 +70,9 @@ export default function EsperienzaPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-20 md:py-24 bg-white">
         <div className="container-x">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <FadeIn direction="left">
               <p className="eyebrow text-gold mb-3">Risultati Significativi</p>
               <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
@@ -101,7 +101,7 @@ export default function EsperienzaPage() {
                 height={600}
                 className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-5 max-w-[200px]">
+              <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white rounded-xl shadow-xl p-4 sm:p-5 max-w-[180px] sm:max-w-[200px]">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-navy/10 flex items-center justify-center">
                     <Users size={22} className="text-navy" />
@@ -128,7 +128,7 @@ export default function EsperienzaPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-navy text-white">
+      <section className="py-16 sm:py-20 md:py-24 bg-navy text-white">
         <div className="container-x text-center">
           <FadeIn>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">

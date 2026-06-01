@@ -28,29 +28,29 @@ export default function HomePage() {
         bgImage="/images/hero-bg.jpg"
       >
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/Contatti" className="btn-primary btn-gold text-lg shadow-xl shadow-gold/20">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full sm:w-auto px-4 sm:px-0">
+          <Link href="/Contatti" className="btn-primary btn-gold text-base sm:text-lg shadow-xl shadow-gold/20 w-full sm:w-auto">
             <span>Richiedi una consulenza</span>
             <ArrowRight size={20} />
           </Link>
-          <a href="tel:+393483112241" className="btn-primary btn-outline-white text-lg">
+          <a href="tel:+393483112241" className="btn-primary btn-outline-white text-base sm:text-lg w-full sm:w-auto">
             <Phone size={20} />
             <span>Contattaci</span>
           </a>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-white/15 grid grid-cols-3 gap-8 max-w-3xl w-full">
-          <div className="text-center">
-            <p className="text-5xl md:text-6xl font-bold text-gold leading-none">30+</p>
-            <p className="text-sm text-white/70 mt-3">Anni di esperienza</p>
+        <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/15 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl w-full">
+          <div className="text-center sm:border-r sm:border-white/15 sm:last:border-r-0">
+            <p className="text-5xl sm:text-5xl md:text-6xl font-bold text-gold leading-none">30+</p>
+            <p className="text-xs sm:text-sm text-white/70 mt-2 sm:mt-3">Anni di esperienza</p>
           </div>
-          <div className="text-center border-x border-white/15">
-            <p className="text-5xl md:text-6xl font-bold text-gold leading-none">40+</p>
-            <p className="text-sm text-white/70 mt-3">Aziende clienti</p>
+          <div className="text-center sm:border-r sm:border-white/15">
+            <p className="text-5xl sm:text-5xl md:text-6xl font-bold text-gold leading-none">40+</p>
+            <p className="text-xs sm:text-sm text-white/70 mt-2 sm:mt-3">Aziende clienti</p>
           </div>
           <div className="text-center">
-            <p className="text-5xl md:text-6xl font-bold text-gold leading-none">100k</p>
-            <p className="text-sm text-white/70 mt-3">Rapporti di lavoro/anno</p>
+            <p className="text-5xl sm:text-5xl md:text-6xl font-bold text-gold leading-none">100k</p>
+            <p className="text-xs sm:text-sm text-white/70 mt-2 sm:mt-3">Rapporti di lavoro/anno</p>
           </div>
         </div>
       </Hero>
@@ -58,9 +58,9 @@ export default function HomePage() {
       <ClientLogos />
 
       {/* Chi Siamo teaser */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-20 md:py-24 bg-white">
         <div className="container-x">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <FadeIn direction="left" className="relative">
               <div className="relative">
                 <Image
@@ -70,7 +70,7 @@ export default function HomePage() {
                   height={600}
                   className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
                 />
-                <div className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-6 max-w-[240px]">
+                <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-white rounded-xl shadow-xl p-4 sm:p-6 max-w-[220px] sm:max-w-[240px]">
                   <div className="flex items-center gap-4">
                     <div className="w-14 h-14 rounded-full bg-navy/10 flex items-center justify-center">
                       <span className="text-2xl font-bold text-navy">30+</span>
@@ -113,12 +113,12 @@ export default function HomePage() {
       </section>
 
       {/* Why us */}
-      <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="container-x">
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
             <p className="eyebrow text-gold mb-3">Perché Sceglierci</p>
             <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">I nostri punti di forza</h2>
-            <p className="text-gray-500 text-lg">Competenza, affidabilità e dedizione al servizio dei nostri clienti</p>
+            <p className="text-gray-500 text-base sm:text-lg">Competenza, affidabilità e dedizione al servizio dei nostri clienti</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -141,12 +141,12 @@ export default function HomePage() {
       </section>
 
       {/* Services preview */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-20 md:py-24 bg-white">
         <div className="container-x">
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
             <p className="eyebrow text-gold mb-3">I Nostri Servizi</p>
             <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">Soluzioni complete per la tua azienda</h2>
-            <p className="text-gray-500 text-lg">Un&apos;offerta integrata di servizi per supportare ogni aspetto della gestione del personale</p>
+            <p className="text-gray-500 text-base sm:text-lg">Un&apos;offerta integrata di servizi per supportare ogni aspetto della gestione del personale</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -179,7 +179,7 @@ export default function HomePage() {
 
       {/* Final CTA banner */}
       <section
-        className="relative py-24 bg-navy text-white overflow-hidden"
+        className="relative py-16 sm:py-20 md:py-24 bg-navy text-white overflow-hidden"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80')",
@@ -189,23 +189,23 @@ export default function HomePage() {
         }}
       >
         <div className="absolute inset-0 bg-navy/90" />
-        <div className="absolute -top-20 -left-20 w-96 h-96 bg-gold/10 rounded-full blur-3xl" />
-        <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-gold/10 rounded-full blur-3xl" />
+        <div className="absolute -top-20 -left-20 w-96 h-96 bg-gold/10 rounded-full blur-3xl hidden sm:block" />
+        <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-gold/10 rounded-full blur-3xl hidden sm:block" />
 
         <div className="relative container-x text-center">
           <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 max-w-3xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 max-w-3xl mx-auto">
               Hai bisogno di un supporto qualificato per la <span className="text-gold">gestione del personale</span>?
             </h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
               Contattaci per una consulenza personalizzata. Siamo a disposizione per analizzare le tue esigenze e proporti le soluzioni più adatte.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/Contatti" className="btn-primary btn-gold text-lg">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
+              <Link href="/Contatti" className="btn-primary btn-gold text-base sm:text-lg w-full sm:w-auto">
                 <span>Richiedi una consulenza</span>
                 <ArrowRight size={20} />
               </Link>
-              <a href="tel:+393483112241" className="btn-primary btn-outline-white text-lg">
+              <a href="tel:+393483112241" className="btn-primary btn-outline-white text-base sm:text-lg w-full sm:w-auto">
                 <Phone size={20} />
                 <span>Chiama ora</span>
               </a>
