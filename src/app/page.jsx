@@ -27,6 +27,7 @@ export default function HomePage() {
         subtitle="Oltre 30 anni di esperienza al fianco delle aziende"
         bgImage="/images/hero-bg.jpg"
       >
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/Contatti" className="btn-primary btn-gold text-lg shadow-xl shadow-gold/20">
             <span>Richiedi una consulenza</span>

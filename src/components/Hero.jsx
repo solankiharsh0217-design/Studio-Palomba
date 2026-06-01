@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { Phone } from 'lucide-react';
 
 export default function Hero({
   title,
@@ -47,7 +46,7 @@ export default function Hero({
         }`}
       >
         {eyebrow && centered && (
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full pl-2 pr-4 py-1.5 mb-6">
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full pl-2 pr-4 py-1.5 mb-8">
             <span className="w-2 h-2 rounded-full bg-gold shadow-[0_0_8px_rgba(201,162,39,0.7)]" />
             <span className="text-sm font-medium text-white/90">{eyebrow}</span>
           </div>
@@ -58,23 +57,33 @@ export default function Hero({
         )}
 
         <h1
-          className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 ${
-            centered ? 'max-w-4xl' : 'max-w-3xl'
+          className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-8 ${
+            centered ? 'max-w-5xl' : 'max-w-3xl'
           }`}
         >
           {title}
           {highlight && (
             <>
-              {' '}
+              <br className="hidden md:block" />
               <span className="text-gold">{highlight}</span>
-              {highlightSuffix && <> {highlightSuffix}</>}
+              {highlightSuffix && (
+                <>
+                  {' '}
+                  <span className="whitespace-nowrap">{highlightSuffix}</span>
+                </>
+              )}
             </>
           )}
         </h1>
 
+        {/* Thin gold accent line under the heading for visual anchor */}
+        {centered && (
+          <div className="w-20 h-1 bg-gold rounded-full mb-8" />
+        )}
+
         {subtitle && (
           <p
-            className={`text-xl text-white/80 leading-relaxed mb-10 ${
+            className={`text-lg md:text-xl text-white/80 leading-relaxed mb-10 ${
               centered ? 'max-w-2xl' : 'max-w-2xl'
             }`}
           >
