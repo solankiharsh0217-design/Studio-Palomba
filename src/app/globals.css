@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply text-gray-800 antialiased;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
+  .eyebrow {
+    @apply text-gold font-semibold tracking-wider uppercase text-sm;
+  }
+  .section {
+    @apply py-24;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg font-medium text-base transition-all duration-300 cursor-pointer;
+  }
+  .btn-gold {
+    @apply bg-gold hover:bg-gold-dark text-white shadow-lg shadow-gold/25;
+  }
+  .btn-navy {
+    @apply bg-navy hover:bg-navy-dark text-white shadow-lg;
+  }
+  .btn-outline-navy {
+    @apply border-2 border-navy text-navy hover:bg-navy hover:text-white;
+  }
+  .btn-outline-white {
+    @apply border-2 border-white/30 bg-white/5 backdrop-blur-sm text-white hover:bg-white/10;
+  }
+}
+
+/* Infinite-scroll logo carousel */
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.logos-track {
+  animation: scroll-logos 40s linear infinite;
+}
+
+.logos-track.paused {
+  animation-play-state: paused;
+}
+
+/* Hero gradient overlay helpers */
+.hero-overlay {
+  background: linear-gradient(
+    to right,
+    #1e3a5f 0%,
+    rgba(30, 58, 95, 0.95) 50%,
+    #152a45 100%
+  );
+}
+
+/* Form input base styling */
+.form-input {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition-colors;
+}
+
+/* Smooth fade-in on scroll (CSS-only fallback) */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
