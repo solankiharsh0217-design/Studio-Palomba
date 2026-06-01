@@ -39,7 +39,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 h-32 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 h-28 transition-all duration-300 ${
         transparent
           ? 'bg-transparent'
           : 'bg-white/95 backdrop-blur-md shadow-lg'
@@ -53,7 +53,7 @@ export default function Header() {
             width={400}
             height={160}
             priority
-            className="h-28 w-auto"
+            className="h-24 w-auto"
           />
         </Link>
 
@@ -110,7 +110,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden absolute top-32 left-0 right-0 bg-white shadow-2xl border-t border-gray-100"
+            className="lg:hidden absolute top-28 left-0 right-0 bg-white shadow-2xl border-t border-gray-100"
           >
             <nav className="container-x py-4 flex flex-col">
               {NAV_ITEMS.map((item) => {
