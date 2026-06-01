@@ -1,12 +1,15 @@
 import Image from 'next/image';
+import { Phone } from 'lucide-react';
 
 export default function Hero({
   title,
   highlight,
+  highlightSuffix,
   subtitle,
   eyebrow,
   bgImage,
   children,
+  centered = false,
 }) {
   return (
     <section className="relative bg-navy text-white overflow-hidden">
@@ -16,32 +19,70 @@ export default function Hero({
           alt=""
           fill
           priority
-          className="object-cover opacity-20"
+          className="object-cover"
           sizes="100vw"
         />
       )}
-      <div className="absolute inset-0 hero-overlay" />
+
+      {/* Layered overlays: solid navy base, then a strong left-to-right gradient
+          that lets the image breathe through on the right, then a soft bottom fade
+          so it blends cleanly into the next section. */}
+      <div className="absolute inset-0 bg-navy/70" />
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            'linear-gradient(110deg, rgba(30,58,95,0.95) 0%, rgba(30,58,95,0.85) 45%, rgba(21,42,69,0.55) 100%)',
+        }}
+      />
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy to-transparent pointer-events-none" />
 
-      <div className="relative container-x pt-32 pb-24 md:pt-40 md:pb-32">
-        <div className="max-w-3xl">
-          {eyebrow && (
-            <p className="eyebrow text-gold mb-4">{eyebrow}</p>
+      {/* Subtle decorative gold orbs to add visual interest */}
+      <div className="absolute -top-24 left-1/4 w-96 h-96 bg-gold/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-10 w-72 h-72 bg-gold/10 rounded-full blur-3xl pointer-events-none hidden md:block" />
+
+      <div
+        className={`relative container-x pt-32 pb-24 md:pt-40 md:pb-32 ${
+          centered ? 'text-center flex flex-col items-center' : ''
+        }`}
+      >
+        {eyebrow && centered && (
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full pl-2 pr-4 py-1.5 mb-6">
+            <span className="w-2 h-2 rounded-full bg-gold shadow-[0_0_8px_rgba(201,162,39,0.7)]" />
+            <span className="text-sm font-medium text-white/90">{eyebrow}</span>
+          </div>
+        )}
+
+        {eyebrow && !centered && (
+          <p className="eyebrow text-gold mb-4">{eyebrow}</p>
+        )}
+
+        <h1
+          className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 ${
+            centered ? 'max-w-4xl' : 'max-w-3xl'
+          }`}
+        >
+          {title}
+          {highlight && (
+            <>
+              {' '}
+              <span className="text-gold">{highlight}</span>
+              {highlightSuffix && <> {highlightSuffix}</>}
+            </>
           )}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            {title}
-            {highlight && (
-              <>
-                {' '}
-                <span className="text-gold">{highlight}</span>
-              </>
-            )}
-          </h1>
-          {subtitle && (
-            <p className="text-xl text-white/80 leading-relaxed mb-8 max-w-2xl">
-              {subtitle}
-            </p>
-          )}
+        </h1>
+
+        {subtitle && (
+          <p
+            className={`text-xl text-white/80 leading-relaxed mb-10 ${
+              centered ? 'max-w-2xl' : 'max-w-2xl'
+            }`}
+          >
+            {subtitle}
+          </p>
+        )}
+
+        <div className={centered ? 'w-full flex flex-col items-center' : ''}>
           {children}
         </div>
       </div>

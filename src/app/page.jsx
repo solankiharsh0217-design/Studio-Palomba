@@ -19,32 +19,37 @@ export default function HomePage() {
   return (
     <>
       <Hero
+        centered
         eyebrow="Studio Palomba"
         title="Consulenza del Lavoro e"
         highlight="Gestione del Personale"
+        highlightSuffix="per le Imprese"
         subtitle="Oltre 30 anni di esperienza al fianco delle aziende"
+        bgImage="/images/hero-bg.jpg"
       >
-        <div className="flex flex-col sm:flex-row gap-4">
-          <Link href="/Contatti" className="btn-primary btn-gold text-lg">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link href="/Contatti" className="btn-primary btn-gold text-lg shadow-xl shadow-gold/20">
             <span>Richiedi una consulenza</span>
             <ArrowRight size={20} />
           </Link>
-          <Link href="/Contatti" className="btn-primary btn-outline-white text-lg">
+          <a href="tel:+393483112241" className="btn-primary btn-outline-white text-lg">
+            <Phone size={20} />
             <span>Contattaci</span>
-          </Link>
+          </a>
         </div>
-        <div className="mt-16 pt-8 border-t border-white/10 grid grid-cols-3 gap-6 max-w-2xl">
-          <div>
-            <p className="text-4xl md:text-5xl font-bold text-gold">30+</p>
-            <p className="text-sm text-white/70 mt-1">Anni di esperienza</p>
+
+        <div className="mt-16 pt-8 border-t border-white/15 grid grid-cols-3 gap-8 max-w-3xl w-full">
+          <div className="text-center">
+            <p className="text-5xl md:text-6xl font-bold text-gold leading-none">30+</p>
+            <p className="text-sm text-white/70 mt-3">Anni di esperienza</p>
           </div>
-          <div>
-            <p className="text-4xl md:text-5xl font-bold text-gold">40+</p>
-            <p className="text-sm text-white/70 mt-1">Aziende clienti</p>
+          <div className="text-center border-x border-white/15">
+            <p className="text-5xl md:text-6xl font-bold text-gold leading-none">40+</p>
+            <p className="text-sm text-white/70 mt-3">Aziende clienti</p>
           </div>
-          <div>
-            <p className="text-4xl md:text-5xl font-bold text-gold">100k</p>
-            <p className="text-sm text-white/70 mt-1">Rapporti di lavoro/anno</p>
+          <div className="text-center">
+            <p className="text-5xl md:text-6xl font-bold text-gold leading-none">100k</p>
+            <p className="text-sm text-white/70 mt-3">Rapporti di lavoro/anno</p>
           </div>
         </div>
       </Hero>
