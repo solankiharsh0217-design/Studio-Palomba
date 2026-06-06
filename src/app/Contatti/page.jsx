@@ -84,7 +84,7 @@ export default function ContattiPage() {
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Mappa Studio Palomba"
+                  title="Mappa Paer Consulting"
                 />
               </div>
             </FadeIn>

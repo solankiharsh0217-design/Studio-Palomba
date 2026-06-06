@@ -72,14 +72,14 @@ export const TEAM = [
     role: 'Specialista Amministrazione Personale',
     image: '/images/team/francesco.jpg',
     isFounder: false,
-    bio: "Ha maturato una solida esperienza nell'ambito dell'amministrazione del personale, dapprima in una società di somministrazione e successivamente presso lo Studio, con il quale collabora da 22 anni. Ha un profilo professionale completo a cui si accompagna un'esperienza significativa maturata nella gestione di grandi realtà nazionali e multinazionali.",
+    bio: "Ha maturato una solida esperienza nell'ambito dell'amministrazione del personale, dapprima in una società di somministrazione e successivamente in Paer Consulting, con la quale collabora da 22 anni. Ha un profilo professionale completo a cui si accompagna un'esperienza significativa maturata nella gestione di grandi realtà nazionali e multinazionali.",
   },
   {
     name: 'Antonio Berardo',
     role: 'Consulente Senior',
     image: '/images/team/antonio.jpg',
     isFounder: false,
-    bio: 'Ha lavorato con lo Studio per 23 anni. Da pochi mesi ha scelto di lavorare come consulente senior, seguendo un\'aspirazione che lo accompagnava da lungo tempo. Vive il lavoro come la sua più grande passione, affiancando le aziende clienti sia nell\'ambito della consulenza del lavoro sia supportandole nella gestione dell\'amministrazione del personale con un approccio concreto e aggiornato. È sempre alla ricerca di soluzioni efficaci tese a raggiungere obiettivi condivisi con i vari responsabili della funzione. Ogni cliente seguito nel corso degli anni rappresenta per lui una storia unica da raccontare e valorizzare al meglio.',
+    bio: 'Ha lavorato con Paer Consulting per 23 anni. Da pochi mesi ha scelto di lavorare come consulente senior, seguendo un\'aspirazione che lo accompagnava da lungo tempo. Vive il lavoro come la sua più grande passione, affiancando le aziende clienti sia nell\'ambito della consulenza del lavoro sia supportandole nella gestione dell\'amministrazione del personale con un approccio concreto e aggiornato. È sempre alla ricerca di soluzioni efficaci tese a raggiungere obiettivi condivisi con i vari responsabili della funzione. Ogni cliente seguito nel corso degli anni rappresenta per lui una storia unica da raccontare e valorizzare al meglio.',
   },
   {
     name: 'Debora Berardo',
@@ -93,7 +93,7 @@ export const TEAM = [
     role: 'Specialista Amministrazione Personale',
     image: '/images/team/anna.jpg',
     isFounder: false,
-    bio: "Collabora con lo Studio da oltre 10 anni nell'ambito dell'amministrazione del personale a tutto tondo, occupandosi sia di payroll che di gestione delle presenze per medie e grandi realtà.",
+    bio: "Collabora con Paer Consulting da oltre 10 anni nell'ambito dell'amministrazione del personale a tutto tondo, occupandosi sia di payroll che di gestione delle presenze per medie e grandi realtà.",
   },
 ];
 
@@ -210,7 +210,7 @@ export const TIMELINE = [
   {
     year: '1990',
     title: 'La Fondazione',
-    description: "Nasce lo Studio Palomba con l'obiettivo di offrire consulenza del lavoro di qualità alle imprese romane",
+    description: "Nasce Paer Consulting con l'obiettivo di offrire consulenza del lavoro di qualità alle imprese romane",
   },
   {
     year: '2000',

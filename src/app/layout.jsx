@@ -6,8 +6,8 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 export const metadata = {
   metadataBase: new URL('https://studio-palomba-consulenza-lavoro-63b8f381.base44.app'),
   title: {
-    default: 'Studio Palomba Consulenza Lavoro',
-    template: '%s | Studio Palomba Consulenza Lavoro',
+    default: 'Paer Consulting',
+    template: '%s | Paer Consulting',
   },
   description:
     'Il tuo partner strategico per la gestione del personale e la consulenza del lavoro. Offriamo soluzioni su misura per imprese di medie e grandi dimensioni, basate su oltre 30 anni di esperienza.',
@@ -16,24 +16,24 @@ export const metadata = {
   },
   manifest: '/manifest.json',
   openGraph: {
-    title: 'Studio Palomba Consulenza Lavoro',
+    title: 'Paer Consulting',
     description:
       'Il tuo partner strategico per la gestione del personale e la consulenza del lavoro. Offriamo soluzioni su misura per imprese di medie e grandi dimensioni, basate su oltre 30 anni di esperienza.',
     url: 'https://studio-palomba-consulenza-lavoro-63b8f381.base44.app',
-    siteName: 'Studio Palomba Consulenza Lavoro',
+    siteName: 'Paer Consulting',
     type: 'website',
     images: [
       {
         url: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/render/image/public/base44-prod/public/69777cbbba49d9f863b8f381/7dc4affa7_logo.png?width=1200&height=630&resize=contain',
         width: 1200,
         height: 630,
-        alt: 'Studio Palomba Consulenza Lavoro',
+        alt: 'Paer Consulting',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Studio Palomba Consulenza Lavoro',
+    title: 'Paer Consulting',
     description:
       'Il tuo partner strategico per la gestione del personale e la consulenza del lavoro. Offriamo soluzioni su misura per imprese di medie e grandi dimensioni, basate su oltre 30 anni di esperienza.',
     images: [

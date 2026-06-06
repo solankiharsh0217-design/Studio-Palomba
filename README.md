@@ -1,6 +1,6 @@
-# Studio Palomba Consulenza Lavoro
+# Paer Consulting
 
-A static duplicate of the Studio Palomba Consulenza Lavoro website
+A static duplicate of the Paer Consulting website
 (https://studio-palomba-consulenza-lavoro-63b8f381.base44.app), rebuilt as a
 Next.js 16 SPA with static export.
 
@@ -11,8 +11,8 @@ Next.js 16 SPA with static export.
 - **Tailwind CSS 3** (custom navy `#1e3a5f` + gold `#c9a227` palette)
 - **Framer Motion** (scroll reveals, mobile menu, active-nav animation)
 - **Lucide React** (icons)
-- **PAER Consulting / Studio Palomba** brand assets downloaded from the
-  original site and served from `/public/images/`.
+- **PAER Consulting** brand assets downloaded from the original site and
+  served from `/public/images/`.
 
 ## Pages
 
@@ -74,7 +74,7 @@ This project lives in its own git repo (initialise once):
 cd "Studio palomba"
 git init
 git add .
-git commit -m "Initial commit: Studio Palomba duplicate"
+git commit -m "Initial commit: Paer Consulting duplicate"
 git branch -M main
 git remote add origin https://github.com/solankiharsh0217-design/Studio-Palomba.git
 git push -u origin main

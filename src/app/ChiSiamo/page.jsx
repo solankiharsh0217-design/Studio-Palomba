@@ -9,7 +9,7 @@ const valueIcons = { Handshake: ShieldCheck, Target: TrendingUp, Lock: FileCheck
 export const metadata = {
   title: 'Chi Siamo',
   description:
-    "Lo Studio Palomba nasce dall'esperienza pluridecennale nel settore della consulenza del lavoro. Scopri la nostra storia, i nostri valori e il metodo di lavoro.",
+    "Paer Consulting nasce dall'esperienza pluridecennale nel settore della consulenza del lavoro. Scopri la nostra storia, i nostri valori e il metodo di lavoro.",
 };
 
 export default function ChiSiamoPage() {
@@ -33,13 +33,13 @@ export default function ChiSiamoPage() {
               </h2>
               <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  Lo Studio Palomba nasce a Roma all&apos;inizio degli anni &apos;90, fondato con la missione di offrire alle imprese un supporto qualificato e personalizzato per tutte le esigenze legate alla gestione delle risorse umane.
+                  Paer Consulting nasce a Roma all&apos;inizio degli anni &apos;90, fondata con la missione di offrire alle imprese un supporto qualificato e personalizzato per tutte le esigenze legate alla gestione delle risorse umane.
                 </p>
                 <p>
                   Nel corso degli anni, abbiamo costruito un solido patrimonio di competenze e relazioni professionali, diventando un punto di riferimento per aziende di medie e grandi dimensioni che cercano un partner affidabile per la consulenza del lavoro.
                 </p>
                 <p>
-                  Oggi lo Studio può contare su un team di professionisti costantemente aggiornati sulle evoluzioni normative, in grado di offrire un servizio completo e integrato per ogni aspetto della gestione del personale.
+                  Oggi Paer Consulting può contare su un team di professionisti costantemente aggiornati sulle evoluzioni normative, in grado di offrire un servizio completo e integrato per ogni aspetto della gestione del personale.
                 </p>
               </div>
             </FadeIn>

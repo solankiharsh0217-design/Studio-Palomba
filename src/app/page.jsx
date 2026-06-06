@@ -9,7 +9,7 @@ import { SERVICES, WHY_US } from '@/lib/data';
 const iconMap = { FileText, Calculator, Users, ShieldAlert, FileCheck: FileText, Heart: Users };
 
 export const metadata = {
-  title: 'Studio Palomba Consulenza Lavoro',
+  title: 'Paer Consulting',
   description:
     'Il tuo partner strategico per la gestione del personale e la consulenza del lavoro. Offriamo soluzioni su misura per imprese di medie e grandi dimensioni, basate su oltre 30 anni di esperienza.',
 };
@@ -20,7 +20,7 @@ export default function HomePage() {
     <>
       <Hero
         centered
-        eyebrow="Studio Palomba"
+        eyebrow="Paer Consulting"
         title="Consulenza del Lavoro e"
         highlight="Gestione del Personale"
         highlightSuffix="per le Imprese"
@@ -90,7 +90,7 @@ export default function HomePage() {
                 Il vostro partner per la gestione del personale
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-4">
-                Lo Studio Palomba nasce dall&apos;esperienza pluridecennale nel settore della consulenza del lavoro, con l&apos;obiettivo di offrire alle imprese un supporto qualificato e personalizzato per tutte le esigenze legate alla gestione delle risorse umane e agli adempimenti normativi.
+                Paer Consulting nasce dall&apos;esperienza pluridecennale nel settore della consulenza del lavoro, con l&apos;obiettivo di offrire alle imprese un supporto qualificato e personalizzato per tutte le esigenze legate alla gestione delle risorse umane e agli adempimenti normativi.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
                 Il nostro approccio è consulenziale, non meramente burocratico: lavoriamo al fianco dei nostri clienti per prevenire rischi e ottimizzare la gestione del personale.
@@ -104,7 +104,7 @@ export default function HomePage() {
                 ))}
               </div>
               <Link href="/ChiSiamo" className="btn-primary btn-navy">
-                <span>Scopri di più sullo Studio</span>
+                <span>Scopri di più su di noi</span>
                 <ArrowRight size={18} />
               </Link>
             </FadeIn>

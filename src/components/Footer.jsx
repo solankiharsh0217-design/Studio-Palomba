@@ -19,7 +19,7 @@ export default function Footer() {
               />
               <Image
                 src="/images/logo2.png"
-                alt="Studio Palomba"
+                alt="Paer Consulting"
                 width={120}
                 height={96}
                 className="h-24 w-auto"
@@ -86,7 +86,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs text-white/60">
-          <p>© {new Date().getFullYear()} Studio Palomba. Tutti i diritti riservati.</p>
+          <p>© {new Date().getFullYear()} Paer Consulting. Tutti i diritti riservati.</p>
           <p>{CONTACT.legal} - {CONTACT.vat} - {CONTACT.addresses.roma}</p>
         </div>
       </div>

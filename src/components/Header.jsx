@@ -46,10 +46,10 @@ export default function Header() {
       }`}
     >
       <div className="container-x h-full flex items-center justify-between gap-6">
-        <Link href="/" className="flex-shrink-0 -my-2" aria-label="Studio Palomba - Home">
+        <Link href="/" className="flex-shrink-0 -my-2" aria-label="Paer Consulting - Home">
           <Image
             src="/images/paer-logo.png"
-            alt="Studio Palomba"
+            alt="Paer Consulting"
             width={400}
             height={160}
             priority
